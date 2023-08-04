@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def dockerImage = docker.build("hello-docker:${env.BUILD_ID}")
+                    def dockerImage = docker.build("my-node-app:${env.BUILD_ID}")
                 }
             }
         }
