@@ -1,3 +1,6 @@
+@Library('docker') _
+@Library('pipeline-utils') _
+
 pipeline {
     agent any
 
